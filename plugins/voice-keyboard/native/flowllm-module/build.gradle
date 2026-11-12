@@ -1,0 +1,25 @@
+// Offline Flow AI native library (llama.cpp), kept in its own module so the
+// app module's React Native CMake build (libappmodules) is never replaced.
+apply plugin: "com.android.library"
+
+android {
+    namespace "com.voicelink.flowllm"
+    compileSdk rootProject.ext.compileSdkVersion
+    ndkVersion rootProject.ext.ndkVersion
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        externalNativeBuild {
+            cmake {
+                abiFilters "arm64-v8a"
+                arguments "-DLLAMA_CPP_DIR=${findProperty('flowLlamaCppDir') ?: '/workspace/llm/llama.cpp'}", "-DGGML_NATIVE=OFF", "-DGGML_CPU_ARM_ARCH=armv8.2-a+dotprod+fp16", "-DCMAKE_BUILD_TYPE=Release", "-DANDROID_STL=c++_shared"
+                cppFlags "-O3"
+            }
+        }
+    }
+    externalNativeBuild {
+        cmake {
+            path "src/main/cpp/CMakeLists.txt"
+            version "3.22.1"
+        }
+    }
+}

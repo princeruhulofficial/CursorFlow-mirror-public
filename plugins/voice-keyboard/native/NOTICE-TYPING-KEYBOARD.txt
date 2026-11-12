@@ -1,0 +1,27 @@
+Cursor Flow built-in typing keyboard (Android IME panel)
+=======================================================
+
+Original Cursor Flow code for layouts, glide decoding, and phonetic engines.
+
+Frequency dictionaries (assets/dicts/*.txt.gz)
+----------------------------------------------
+Source: hermitdave/FrequencyWords (OpenSubtitles-derived word frequency lists)
+License: MIT License
+https://github.com/hermitdave/FrequencyWords
+
+Files: en.txt.gz, es.txt.gz, fr.txt.gz, bn.txt.gz, hi.txt.gz
+English bigrams (en_bigrams.txt.gz): curated by Cursor Flow (original).
+
+Bangla Avro-compatible phonetic (AvroPhonetic.kt)
+------------------------------------------------
+Original Cursor Flow implementation of the publicly documented Avro Phonetic
+mapping scheme.
+
+Bangla Probhat / Hindi InScript fixed layouts
+---------------------------------------------
+Chart-based original layout wiring in TypingLayouts.kt.
+
+Glide typing (GlideDecoder.kt)
+------------------------------
+Original elastic / shape-matching decoder inspired by published SHARK2 /
+gesture-keyboard literature (Kristensson & Zhai).
