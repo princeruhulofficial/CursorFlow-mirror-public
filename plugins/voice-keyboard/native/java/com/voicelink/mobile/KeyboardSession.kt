@@ -55,7 +55,7 @@ object KeyboardSession {
   }
 
   /** Returns a usable access token, refreshing it silently when close to expiry or when forced. */
-  fun freshAccessToken(context: Context, force: Boolean = False): String? {
+  fun freshAccessToken(context: Context, force: Boolean = false): String? {
     synchronized(lock) {
       val current = VoiceKeyboardSecureStore.get(context)
       if (!force && isFresh(current)) {
