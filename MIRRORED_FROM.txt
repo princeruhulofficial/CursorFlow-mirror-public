@@ -1,4 +1,9 @@
 Source: princeruhulofficial/CursorFlow
 Branch: fix/android-features
-Commit: c70fcfe
-Mirrored via GitHub MCP to CursorFlow-mirror-public for workspace sync.
+Commit: c70fcfe1aefc50844f73bbe182365122df46e1f9
+Mirrored via GitHub MCP (gh clone 404 for private repo)
+Staging public mirror: princeruhulofficial/CursorFlow-mirror-public
+versionName: 3.0.24
+versionCode: 86
+Note: android/app/build.gradle signing passwords redacted to env vars
+Partial mirror focused on keyboard IME + Home UI; some Kotlin deps still pending (see missing list)

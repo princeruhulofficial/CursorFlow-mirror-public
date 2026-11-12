@@ -6,7 +6,7 @@ const bundleId =
   rawBundleId
     .replace(/[-_]/g, ".")
     .replace(/[^a-zA-Z0-9.]/g, "")
-    .replace(/\.+/g, ".")
+    .replace(/\.+/, ".")
     .replace(/^\.+|\.+$/g, "")
     .toLowerCase()
     .split(".")
@@ -29,7 +29,7 @@ const env = {
 const config: ExpoConfig = {
   name: env.appName,
   slug: env.appSlug,
-  version: "3.0.23",
+  version: "3.0.24",
   orientation: "portrait",
   icon: "./assets/images/icon.png",
   scheme: env.scheme,
@@ -52,7 +52,7 @@ const config: ExpoConfig = {
     edgeToEdgeEnabled: true,
     predictiveBackGestureEnabled: false,
     package: env.androidPackage,
-    versionCode: 85,
+    versionCode: 86,
     permissions: [
       "android.permission.RECORD_AUDIO",
       "android.permission.CAMERA",
