@@ -6,7 +6,7 @@ const bundleId =
   rawBundleId
     .replace(/[-_]/g, ".")
     .replace(/[^a-zA-Z0-9.]/g, "")
-    .replace(/\.+/, ".")
+    .replace(/\.+/g, ".")
     .replace(/^\.+|\.+$/g, "")
     .toLowerCase()
     .split(".")
