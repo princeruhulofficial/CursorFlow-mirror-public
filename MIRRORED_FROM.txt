@@ -1,0 +1,4 @@
+Source: princeruhulofficial/CursorFlow
+Branch: fix/android-features
+Commit: c70fcfe
+Mirrored via GitHub MCP to CursorFlow-mirror-public for workspace sync.
